@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* reset defaults */
+        *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box; 
+        
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* horizontal top navigation*/
+        nav.top-nav{
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav.top-nav a {
+            color: rgb( 219, 208, 47);
+            text-decoration: none;
+            padding: 26px 20px;
+            display: inline-block;
+            font-weight: bold;
+        }
+        nav.top-nav a:hover{
+            background-color: #3633e4;
+        }
+        /* vertical sidebar */
+        nav.side-nav{
+            background-color: #f1f1f1;
+            position: fixed;
+            top: 50px; /* pushes it below horizontal nav */
+            left: 0;
+            width: 200px;
+            height: calc(100vh - 50px);
+            padding-top: 20px;
+        }
+        nav.side-nav a {
+            display: block;
+            color: #000;
+            text-decoration: none;
+            padding: 12px 16px;
+            font-weight: bold;
+        }
+        nav.side-nav a:hover{
+            background-color: #555;
+            color: white;
+
+        }
+    </style>
+    
+</head>
+<body>
+
+    <!-- horizontal top navigation -->
+    <nav class="top-nav">
+     <a href="https://www.lntecc.com/">home</a>
+     <a href="https://www.lntecc.com/#">projects</a>
+     <a href="https://www.lntipm.org/programs/programs/">courses</a> 
+     <a href="https://www.larsentoubro.com/corporate/careers/">careers</a> 
+     <a href="https://www.larsentoubro.com/corporate/contact-us/">contact us</a>
+    </nav>
+
+
+    <!-- vertical sidebar navigation -->
+     <nav class="side-nav">
+     <a href="https://www.lntecc.com/">home</a>
+     <a href="https://www.lntecc.com/#">projects</a>
+     <a href="#https://www.lntipm.org/programs/programs/">courses</a> 
+     <a href="https://www.larsentoubro.com/corporate/careers/">careers</a> 
+     <a href="https://www.larsentoubro.com/corporate/contact-us/">contact us</a> 
+     </nav>
+     
+     <!--main content Area-->
+     <div class="main-content">
+        <h1>welcome to the DD constructions</h1>
+        <p> this section remains visible the sidebar and below the top navigation</p>
+
+     </div>
+      
+</body>
+</html>
