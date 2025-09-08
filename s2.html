@@ -1,0 +1,38 @@
+ <!DOCTYPE HTML>
+<html>
+<head>
+  <title>Information Box</title>
+  <style>
+    #infoBox {
+      position: fixed;
+      left: 30%;
+      background-color: lavender;
+      padding: 20px;
+      text-align: center;
+    }
+    #infoBox button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the web page:</h1>
+  <!-- Information Box -->
+  <div id="infoBox">
+    <h2>Information</h2>
+    <p>This is an important message:</p>
+    <button onclick="closeInfoBox()">Close</button>
+  </div>
+
+  <script>
+    function closeInfoBox() {
+      document.getElementById("infoBox").style.display = "none";
+    }
+  </script>
+</body>
+</html>
+
